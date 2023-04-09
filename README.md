@@ -1,28 +1,30 @@
 ### Optical Coherence Tomography .vol Format
 
-A library to work (e.g. read, write) with optical coherence tomography .vol raw files from Heidelberg Engineering Spectralis device.
+This library provides a set of tools to work with optical coherence tomography .vol raw files from Heidelberg Engineering Spectralis devices, such as reading and writing.
 
-For more information please refer to docstrings in the modules. 
+Please refer to the docstrings in the modules for more information.
 
-For other file formats from different OCT manufacturers there is an excellent package written by Mark Graham from King's College London [PyPi](https://pypi.org/project/oct-converter/)
+For working with other file formats from different OCT manufacturers, we recommend the excellent [PyPi](https://pypi.org/project/oct-converter/) package written by Mark Graham from King's College London.
 
-The _open_vol method of the OCTVol class was extensively tested for different types of OCT vol files but unfortunately were not implemented in a structured test file.
+Note that the `_open_vol` method of the `OCTVol` class was extensively tested for different types of OCT vol files but unfortunately was not implemented in a structured test file.
 
 ### Requirements
-python &geq; 3.7
-numpy
-datetime
-os
-copy
-glob
-pytest
+To use this library, you will need the following:
+
+- python &geq; 3.7
+- numpy
+- pytest
 
 ### Usage
-from OCT.formats.OCTVol import OCTVol <br />
+To use the `OCTVol` class, simply import it and create an instance of it, providing the path to your vol file as an argument, like so:
+
+```python
+from OCT.formats.OCTVol import OCTVol
 oct_vol = OCTVol("/path/to/your/vol/file")
+```
 
 ### Contact
-Please contact Amir Motamedi (seyedamirhosein.motamedi(at)charite.de) for any inquires about this software.
+If you have any questions or inquiries about this software, please contact Amir Motamedi at seyedamirhosein.motamedi(at)charite.de.
 
 ### License
-Please read LICENSE.txt.
+Please refer to the `LICENSE.txt` file for licensing information.
